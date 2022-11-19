@@ -1,6 +1,7 @@
 \documentclass[11pt, letterpaper]{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{graphicx}
@@ -64,53 +65,55 @@
 \newcommand{\entry}[4]{
 	\ifthenelse{\isempty{#3}}
 	{\slimentry{#1}{#2}}{
-	\begin{minipage}[t]{.25\linewidth}
-		\hfill \textsc{#1}
-	\end{minipage}
-	\hfill\vline\hfill
-	\begin{minipage}[t]{.7\linewidth}
-		{\bf#2} \\ \textsf{#3} \\ \footnotesize{#4}
-	\end{minipage}\\
-	\vspace{.2cm}
+		\begin{minipage}[t]{.25\linewidth}
+			\hfill \textsc{#1}
+		\end{minipage}
+		\hfill \vline \hfill
+		\begin{minipage}[t]{.7\linewidth}
+			{\bf #2} \\ \textsf{#3} \\ \footnotesize{#4}
+		\end{minipage}\\
+		\vspace{.2cm}
 }}
 
 \newcommand{\slimentry}[2]{
 	\begin{minipage}[t]{.25\linewidth}
-	\hfill \textsc{#1}
+		\hfill \textsc{#1}
 	\end{minipage}
-	\hfill\vline\hfill
+	\hfill \vline \hfill
 	\begin{minipage}[t]{.7\linewidth}
-	#2
+		#2
 	\end{minipage}\\
 	\vspace{.25cm}
 }% end \entry command definition
 
 \newcommand{\nitr}{National Institute of Technology, Rourkela}
-\newcommand{\imsc}{The Institute of Mathematical Sciences, Chennai}
+\newcommand{\imsc}{Institute of Mathematical Sciences, Chennai}
 
 \author{Krishna Jalan}
 \date{\today}
 
 \begin{document}
 	\maketitle
-	
+
 	\section{Research Interests}
-	Quantum information aspects of quantum field theory and quantum gravity, Black hole information paradox, Gauge/gravity duality.
-	
+	\hfill \begin{minipage}{\dimexpr\textwidth-0.5cm}
+		Quantum information aspects of quantum field theory and quantum gravity, Black hole information paradox, Gauge/gravity duality.
+	\end{minipage}
+
 	\section{Education}
 	\entry{Sep 2020 -- $\cdots \cdot$}{Ph.D. in Theoretical Physics}{\imsc}{Thesis : Black Hole Dynamics \& Holography \\ Supervisor : \href{https://www.imsc.res.in/roji_pius}{Roji Pius}}
-	
+
 	\entry{Aug 2014 -- May 2019}{(Integrated) M.Sc. in Physics}{\nitr}{Thesis : Anisotropic Thermalization in Strongly Coupled Field Theory via Gauge/Gravity Duality \\ Supervisor : \href{https://www.nitrkl.ac.in/FProfile.aspx?e=mahapatrasub}{Subhash Chandra Mahapatra}}
-	
+
 	\section{Work Experience}
 	\entry{Sep 2019 -- Dec 2019}{Research Assistant}{Gauhati University, Guwahati}{Project on early universe dynamics related to inflation theory and origin of density perturbations, and dynamical dark energy under the guidance of \emph{Dr. Sanjeev Kalita}.}
-	
+
 	\entry{Aug 2018 -- May 2019}{Master's Student}{National Institute of Technology, Rourkela}{Master's thesis project on the application of gauge/gravity duality to study anisotropic signature of magnetic field on the thermalization time of quark-gluon plasma.}
-	
+
 	\entry{May 2018 -- Jul 2018}{Summer Research Fellow}{Harish-Chandra Research Institute, Prayagraj (Allahabad)}{Project on dark matter particles titled \emph{A Study of Dark Matter} under the guidance of \emph{Prof. Biswarup Mukhopadhyaya}.}
-	
+
 	\entry{May 2017 -- Jul 2017}{Summer Research Fellow}{Jawaharlal Nehru University, Delhi}{Project on neutrino oscillations titled \emph{Phenomenology of Neutrino Oscillation} under the guidance of \emph{Dr. Poonam Mehta}.}
-	
+
 	\section{Conferences/Workshops}
 	\subsection{Attended}
 	\begin{enumerate}
@@ -123,70 +126,72 @@
 		\item All Lambdas Holography @ Prague, Online Conference, Czechia, October 2021.
 
 		\item Black Holes Inside and Out, Online Conference, Japan, September 2021.
-		
+
 		\item Workshop on Astronomy \& Astrophysics, National Institute of Technology, Rourkela, India, sponsored by Inter-University Center for Astronomy \& Astrophysics, Pune, India, March 2018.
 
 		\item Workshop on General Relativity \& Cosmology, Department of Physics \& Astronomy, National Institute of Technology, Rourkela, India, February 2018.
-		
+
 		\item Mathematics Training and Talent Search program (Level O), India, June 2016.
 	\end{enumerate}
-	
+
 	\section{Awards \& Achievements}
 	\begin{itemize}
-		\renewcommand{\labelitemi}{\color{blue}$\scriptstyle{\lozenge}$}
+	\renewcommand{\labelitemi}{\color{blue}$\scriptstyle{\lozenge}$}
 		\item Institute Gold Medal for the Best Postgraduate with Integrated M.Sc. Degree among the natural sciences, National Institute of Technology, Rourkela, awarded in January, 2020.
-		
+
 		\item Institute Silver Medal for the Best Postgraduate with Integrated M.Sc. Degree in Department of Physics \& Astronomy, National Institute of Technology, Rourkela awarded in January, 2020.
-		
+
 		\item Selected for the prestigious \emph{Summer Research Fellowship}, awarded jointly by the academies of sciences in India (IASc-INSA-NASI), for 2 consecutive years, May - July, 2017 and 2018.
-		
+
 		\item Recipient of Academic Excellency Award, Department of Physics and Astronomy, NIT Rourkela, for 4 consecutive academic years, 2014-15, 2015-16, 2016-17 and 2017-18.
-		
+
 		\item INSPIRE Scholarship awarded by Department of Science and Technology, Government of India, to the top 1 percentile students of the country based on Higher Secondary merit, February, 2015 - May, 2019.
-		
+
 		\item Qualified \textbf{Regional Mathematics Olympiad} from the North Eastern Region of India, 2013.
 
 		\item Awarded the ``Certificate of Appreciation" for academic excellence in the Matriculation examination, by the Deputy Commissioner, Chirang District, Assam, India, 2012.
-		
+
 		\item Gold Medal in Mathematics Olympiad conducted by All India Schools Mathematics Teachers Association, 2011.
 	\end{itemize}
-	
+
 	\section{Teaching Experience}
-	\entry{Fall 2022}{Teaching Assistant for Quantum Mechanics I}{\imsc}{}
-	
+	\slimentry{Fall 2022}{\textbf{Teaching Assistant for Quantum Mechanics I} \\ \imsc}
+
+	\slimentry{Spring 2022}{\textbf{Teaching Assistant for General Relativity} \\ \imsc}
+
 	\entry{Aug 2017 - Apr 2018}{Tutor at Student Counselling Program}{\nitr} {Taught a class of about 20 students -- Freshmen Physics Remedial Class.}{}
 	\vspace{0.15cm}
-		
+
 	\section{Skills}
 	\entry{Technical}{\begin{itemize}
 			\renewcommand{\labelitemi}{\color{blue}$\scriptstyle{\lozenge}$}
 			\item \textsc{OS} --- Linux, Windows.
 			\item \textsc{Coding} --- C (basic), C++ (basic), FORTRAN (intermediate), Python (intermediate), Mathematica (intermediate), Maxima (basic).
 			\item \textsc{Documentation} --- \LaTeX\ (advanced), Office (advanced).
-		\end{itemize}}{}{}
+	\end{itemize}}{}{}
 
 	\entry{Languages}{Marwadi (mother tongue), Hindi (fluent), English (fluent), Assamese (basic), Bengali (basic), Japanese (basic), Spanish (learning).}{}{}
-	
+
 	\section{Non-academic Duties}
-	\entry{Aug 2017 -- Apr 2018}{Mentor at Student Counselling Program}{\nitr}{Academic and non-academic guide to a group of 4 freshmen.}{}
+	\entry{Aug 2017 -- Apr 2018}{Mentor at Student Counselling Program}{\nitr}{Academic and non-academic guide to a group of 4 freshmen.}
 
 	\entry{Apr 2011 -- Feb 2012}{School Head-boy during high school.}{}{}
 
 %	\section{Hobbies \& Interests}
 
 	\section{Referees}
-	\vspace{-15pt}
-	\begin{multicols}{2}
+	\hfill \begin{minipage}{\dimexpr\textwidth-0.5cm}
+		\begin{multicols}{2}
 			Dr. Roji Pius \\
 			Department of Theoretical Physics \\
-			\imsc 
+			\imsc
 
 			\vfill
 
 			Dr. Subhash Chandra Mahapatra \\
 			Department of Physics \& Astronomy \\
-			\nitr 
-	\end{multicols}
-	Email address available upon request.
-
+			\nitr
+		\end{multicols}
+		Email address available upon request.
+	\end{minipage}
 \end{document}
